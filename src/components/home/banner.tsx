@@ -13,7 +13,7 @@ const BannerUI = () => {
   }
 
   const handleButton = () => {
-    dispatch(setUrlApi(`https://api.unsplash.com/search/photos?page=5&per_page=100&query=${searchValue}&client_id=${API_KEY}`))
+    dispatch(setUrlApi(`https://api.unsplash.com/search/photos?page=1&per_page=10&query=${searchValue}&client_id=${API_KEY}`))
     setSearchValue("");
   }
 

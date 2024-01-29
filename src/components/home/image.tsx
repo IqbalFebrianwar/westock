@@ -23,6 +23,7 @@ const ImageMain: React.FC<ImageProps> = ({ urls, user, created_at }) => {
         width={100}
         height={100}
         quality={100}
+        loading="lazy"
         className="w-full rounded-xl h-52 object-cover"
         alt={"image"}
       />
@@ -33,6 +34,7 @@ const ImageMain: React.FC<ImageProps> = ({ urls, user, created_at }) => {
             width={100}
             height={100}
             quality={100}
+            loading="lazy"
             className="w-12 mt-5 rounded-full"
             alt={"image"}
           />
