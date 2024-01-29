@@ -10,11 +10,11 @@ const NavbarUI =()=>{
           <Image src={Logo} alt="logo" width={25} />
           <p className="text-white">westock</p>
         </Link>
-        <div className="bg-transparent border-0  btn btn-square">
+        <Link href="https://github.com/IqbalFebrianwar/westock" className="bg-transparent border-0  btn btn-square">
           <button>
             <Image src={GithubIcon} alt="Icon" width={40} />
           </button>
-        </div>
+        </Link>
       </nav>
     )
 }
