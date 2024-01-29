@@ -23,7 +23,7 @@ const useImageUI = () => {
       : fetchData(
           `https://api.unsplash.com/photos?page=5&per_page=100&client_id=${API_KEY}`
         );
-  }, [urlApi]);
+  }, []);
 
   return (
     <>
