@@ -11,13 +11,12 @@ const useImageUI = () => {
     (state: { imageReducer: { urlApi: String } }) => state.imageReducer.urlApi
   );
 
-  const fetchData = async (url: string) => {
-    const res = await fetch(url);
-    const data = await res.json();
-    urlApi ? setuseImage(data.results) : setuseImage(data)
-  };
-
   useEffect(() => {
+    const fetchData = async (url: string) => {
+      const res = await fetch(url);
+      const data = await res.json();
+      urlApi ? setuseImage(data.results) : setuseImage(data)
+    };
     urlApi
       ? fetchData(urlApi.toString())
       : fetchData(
