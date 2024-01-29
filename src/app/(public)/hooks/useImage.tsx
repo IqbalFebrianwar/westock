@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import Image from "@/components/home/image";
+import ImageMain from "@/components/home/image";
 import SkeletonUI from "@/components/home/skeleton";
 import { useSelector } from "react-redux";
 
@@ -22,7 +22,7 @@ const useImageUI = () => {
       : fetchData(
           `https://api.unsplash.com/photos?page=5&per_page=100&client_id=${API_KEY}`
         );
-  }, []);
+  }, [API_KEY, urlApi]);
 
   return (
     <>
@@ -31,7 +31,7 @@ const useImageUI = () => {
       ) : (
         <>
           {useImage.map((image) => (
-            <Image key={image.id} {...image} />
+            <ImageMain alt key={image.id} {...image} />
           ))}
         </>
       )}

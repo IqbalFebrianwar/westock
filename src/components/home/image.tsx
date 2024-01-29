@@ -24,7 +24,7 @@ const ImageMain: React.FC<ImageProps> = ({ urls, user, created_at }) => {
         height={100}
         quality={100}
         className="w-full rounded-xl h-52 object-cover"
-        alt={user.name}
+        alt={"image"}
       />
       <div className="flex w-full gap-x-3 items-center">
         <>
@@ -34,7 +34,7 @@ const ImageMain: React.FC<ImageProps> = ({ urls, user, created_at }) => {
             height={100}
             quality={100}
             className="w-12 mt-5 rounded-full"
-            alt={user.name}
+            alt={"image"}
           />
         </>
         <div className="grid items-center text-start">
